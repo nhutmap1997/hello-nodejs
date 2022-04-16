@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/nhutmap1997/hello-nodejs.git'
+                git branch: 'main' 'https://github.com/nhutmap1997/hello-nodejs.git'
             }
         }
     }
